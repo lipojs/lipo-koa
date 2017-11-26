@@ -40,7 +40,7 @@ const Koa = require('koa');
 const multer = require('koa-multer');
 const bytes = require('bytes');
 const errorHandler = require('koa-better-error-handler');
-const lipoMiddleware = require('lipo-koa');
+const lipoKoa = require('lipo-koa');
 
 const app = new Koa();
 
