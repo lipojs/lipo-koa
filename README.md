@@ -1,11 +1,11 @@
 # lipo-koa
 
-[![build status](https://img.shields.io/travis/niftylettuce/lipo-koa.svg)](https://travis-ci.org/niftylettuce/lipo-koa)
-[![code coverage](https://img.shields.io/codecov/c/github/niftylettuce/lipo-koa.svg)](https://codecov.io/gh/niftylettuce/lipo-koa)
+[![build status](https://img.shields.io/travis/lipojs/lipo-koa.svg)](https://travis-ci.org/lipojs/lipo-koa)
+[![code coverage](https://img.shields.io/codecov/c/github/lipojs/lipo-koa.svg)](https://codecov.io/gh/lipojs/lipo-koa)
 [![code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![made with lass](https://img.shields.io/badge/made_with-lass-95CC28.svg)](https://lass.js.org)
-[![license](https://img.shields.io/github/license/niftylettuce/lipo-koa.svg)](LICENSE)
+[![license](https://img.shields.io/github/license/lipojs/lipo-koa.svg)](LICENSE)
 
 > Lipo middleware for Lad and Koa
 

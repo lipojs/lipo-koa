@@ -1,10 +1,10 @@
 {
   "name": "lipo-koa",
   "description": "Lipo middleware for Lad and Koa",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Nick Baugh <niftylettuce@gmail.com> (http://niftylettuce.com/)",
   "bugs": {
-    "url": "https://github.com/niftylettuce/lipo-koa/issues",
+    "url": "https://github.com/lipojs/lipo-koa/issues",
     "email": "niftylettuce@gmail.com"
   },
   "contributors": [
@@ -37,7 +37,7 @@
   "engines": {
     "node": ">=8.3"
   },
-  "homepage": "https://github.com/niftylettuce/lipo-koa",
+  "homepage": "https://github.com/lipojs/lipo-koa",
   "keywords": [
     "lipo",
     "koa",
@@ -82,7 +82,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/niftylettuce/lipo-koa"
+    "url": "https://github.com/lipojs/lipo-koa"
   },
   "scripts": {
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
