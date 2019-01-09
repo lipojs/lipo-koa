@@ -7,7 +7,7 @@ const INVALID_QUEUE = 'Image transformation queue was invalid.';
 async function lipoKoa(ctx) {
   try {
     const err = Boom.badRequest(
-      _.isFunction(ctx.req.t) ? ctx.req.t(INVALID_QUEUE) : INVALID_QUEUE
+      _.isFunction(ctx.request.t) ? ctx.request.t(INVALID_QUEUE) : INVALID_QUEUE
     );
 
     if (!_.isString(ctx.req.body.queue)) throw Boom.badRequest(err);
@@ -47,8 +47,8 @@ async function lipoKoa(ctx) {
     } else {
       ctx.body = ctx.req.file ? ctx.req.file.stream.pipe(transform) : transform;
     }
-  } catch (err) {
-    ctx.throw(err);
+  } catch (error) {
+    ctx.throw(error);
   }
 }
 
