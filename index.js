@@ -10,14 +10,14 @@ async function lipoKoa(ctx) {
       _.isFunction(ctx.request.t) ? ctx.request.t(INVALID_QUEUE) : INVALID_QUEUE
     );
 
-    if (!_.isString(ctx.req.body.queue)) throw Boom.badRequest(err);
+    if (!_.isString(ctx.request.body.queue)) throw Boom.badRequest(err);
 
-    const queue = JSON.parse(ctx.req.body.queue);
+    const queue = JSON.parse(ctx.request.body.queue);
 
     if (!_.isArray(queue)) throw Boom.badRequest(err);
 
-    const options = _.isString(ctx.req.body.options)
-      ? JSON.parse(ctx.req.body.options)
+    const options = _.isString(ctx.request.body.options)
+      ? JSON.parse(ctx.request.body.options)
       : null;
 
     let metadata = false;
