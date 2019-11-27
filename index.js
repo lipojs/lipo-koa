@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const Boom = require('boom');
+const Boom = require('@hapi/boom');
 const sharp = require('sharp');
 
 const INVALID_QUEUE = 'Image transformation queue was invalid.';
@@ -29,6 +29,7 @@ async function lipoKoa(ctx) {
           metadata = true;
           return transform;
         }
+
         return transform[task.shift()](...task);
       },
       _.isObject(options) ? sharp(options) : sharp()
