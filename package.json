@@ -1,7 +1,7 @@
 {
   "name": "lipo-koa",
   "description": "Lipo middleware for Lad and Koa",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "Nick Baugh <niftylettuce@gmail.com> (http://niftylettuce.com/)",
   "bugs": {
     "url": "https://github.com/lipojs/lipo-koa/issues",
