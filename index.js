@@ -44,10 +44,12 @@ async function lipoKoa(ctx) {
 
     if (metadata) {
       if (ctx.req.file) ctx.req.file.stream.pipe(transform);
+      else if (ctx.request.file) ctx.request.file.stream.pipe(transform);
       ctx.body = await transform.metadata();
-    } else {
-      ctx.body = ctx.req.file ? ctx.req.file.stream.pipe(transform) : transform;
-    }
+    } else if (ctx.req.file) ctx.body = ctx.req.file.stream.pipe(transform);
+    else if (ctx.request.file)
+      ctx.body = ctx.request.file.stream.pipe(transform);
+    else ctx.body = transform;
   } catch (error) {
     ctx.throw(error);
   }
